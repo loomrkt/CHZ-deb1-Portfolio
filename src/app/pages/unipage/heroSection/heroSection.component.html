@@ -2,8 +2,8 @@
   <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
     <div class="mt-14 sm:mt-0">
       <h3 class="mb-4 sm:mb-5 block text-2xl font-bold text-gray-800 lg:text-4xl dark:text-white">Salut, je suis <br/> RAKOTONDRAZAKA <span class="bg-clip-text bg-gradient-to-tr from-blue-600 to-violet-600 text-transparent">Nameno</span> F.</h3>
-      <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-lg font-medium bg-gradient-to-br from-blue-600 to-violet-600 text-white ">Developpeur Full-Stack</span>
-      <p class="mt-4 sm:mt-5 text-lg text-gray-800 dark:text-gray-400">Curieuse, déterminée, et toujours avide d'apprendre et de relever de nouveaux défis. Je suis un développeur passionné par la creation de solutions innovantes. </p>
+      <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 text-lg font-medium bg-gradient-to-br from-blue-600 to-violet-600 text-white ">{{hero.proffesion}}</span>
+      <p class="mt-4 sm:mt-5 text-lg text-gray-800 dark:text-gray-400">{{hero.description}}</p>
       <div class="mt-7 relative justify-center items-center w-fit h-min bg-white rounded-xl before:absolute before:-inset-px before:-z-[1] before:bg-gradient-to-br before:from-blue-600  before:to-violet-600 hover:before:to-blue-600 hover:before:from-violet-600 before:rounded-xl dark:bg-slate-900 grid gap-3 sm:inline-flex">
         <a href="#contact" class="py-3 px-4 flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border-none  disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600  bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent dark:text-white">
           Contactez-moi
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="relative h-max sm:h-screen py-0 sm:py-16">
-        <img class="w-full h-full object-scale-down object-right" src="../../../../assets/MyPhoto.jpg" alt="Image Description"/>
+        <img class="w-full h-full object-scale-down object-right" [src]="hero.img" alt="Image Description"/>
     </div>
   </div>
 </section>
