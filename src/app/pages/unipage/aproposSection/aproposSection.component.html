@@ -1,4 +1,4 @@
-<div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')]">
+<section class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')] before:bg-no-repeat before:bg-top before:bg-cover before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('https://preline.co/assets/svg/examples/polygon-bg-element-dark.svg')]" id="apropos">
   <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10 block gap lg:flex items-center">
     <div>
       <div class="mt-5 max-w-2xl ">
@@ -8,7 +8,7 @@
         </h1>
       </div>
       <div class="mt-5 max-w-3xl">
-        <p class="text-lg text-gray-600 dark:text-gray-400">Je m'appelle Nameno Fanantenana RAKOTONDRAZAKA. J'ai 21 ans et en ce moment je suis etudiants en 2eme année à l'Institut Supérieur Polytéchnique de Madagascar (ISPM). Un jeune développeur Full-Stack basé à Antananarivo passionné par la création de solutions innovantes, je suis constamment à la recherche de nouveaux défis et j'aime apprendre de nouvelles technologies. J'ai une expérience dans le développement d'applications web. N'hésitez pas à me contacter au 0342991503 ou par e-mail à mrnrakotondrazaka&#64;gmail.com pour discuter ou pour tout demande.</p>
+        <p class="text-lg text-gray-600 dark:text-gray-400">{{apropos.description}}</p>
       </div>
       <a href="../../../../assets/MyPhoto.jpg" download>
           <button btn-1 text="Télécharger mon CV">
@@ -19,13 +19,10 @@
       </a>
     </div>
     <div class="grid grid-cols-1 gap-4 max-w-[75rem] mx-auto mt-10 items-end">
-      <app-texte-with-title title="Nom" text="RAKOTONDRAZAKA"/>
-      <app-texte-with-title title="Prenom" text="Nameno Fanantenana"/>
-      <app-texte-with-title title="Age" text="21 ans"/>
-      <app-texte-with-title title="Ville" text="Antananarivo"/>
-      <app-texte-with-title title="Profession" text="Developpeur Full-Stack"/>
-      <app-texte-with-title title="Numero" text="0342991503"/>
-      <app-texte-with-title title="E-mail" text="mrnrakotondrazaka@gmail.com"/>
+      @for (item of apropos.liste; track $index) {
+        <app-texte-with-title [title]="item.title" [text]="item.texte"/>
+      }
+
     </div>
   </div>
-</div>
+</section>
