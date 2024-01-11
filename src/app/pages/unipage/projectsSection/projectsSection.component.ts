@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ProjectItemComponent } from './projectItem/projectItem.component';
 import { ButtonComponent } from '../../../components/button/button.component';
+import { Project } from '../../../models/project.model';
+import { PROJECT } from './mock-projects';
 
 @Component({
   selector: 'app-projects-section',
@@ -12,4 +14,6 @@ import { ButtonComponent } from '../../../components/button/button.component';
   templateUrl: './projectsSection.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectsSectionComponent { }
+export class ProjectsSectionComponent {
+  projects: Project[] = PROJECT;
+}
