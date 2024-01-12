@@ -5,11 +5,13 @@ import { AproposSectionComponent } from './aproposSection/aproposSection.compone
 import { SkillsSectionComponent } from './skillsSection/skillsSection.component';
 import { TimelineSectionComponent } from './timelineSection/timelineSection.component';
 import { ProjectsSectionComponent } from './projectsSection/projectsSection.component';
+import { ContactSectionComponent } from './contactSection/contactSection.component';
 @Component({
   selector: 'app-unipage',
   standalone: true,
   imports: [
-    CommonModule,HeroSectionComponent,AproposSectionComponent,SkillsSectionComponent,TimelineSectionComponent,ProjectsSectionComponent
+    CommonModule,HeroSectionComponent,AproposSectionComponent,SkillsSectionComponent,
+    TimelineSectionComponent,ProjectsSectionComponent,ContactSectionComponent
   ],
   templateUrl: './unipage.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
