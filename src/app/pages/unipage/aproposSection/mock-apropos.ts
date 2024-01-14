@@ -1,7 +1,7 @@
 import { Apropos } from "../../../models/apropos.model";
 
 export const APROPOS: Apropos = {
-  description: "Je m'appelle Nameno Fanantenana RAKOTONDRAZAKA. J'ai 21 ans et en ce moment je suis etudiants en 2eme année à l'Institut Supérieur Polytéchnique de Madagascar (ISPM). Un jeune développeur Full-Stack basé à Antananarivo passionné par la création de solutions innovantes, je suis constamment à la recherche de nouveaux défis et j'aime apprendre de nouvelles technologies. J'ai une expérience dans le développement d'applications web. N'hésitez pas à me contacter au 0342991503 ou par e-mail à mrnrakotondrazaka@gmail.com pour discuter ou pour tout demande.",
+  description: "Je suis Nameno Fanantenana RAKOTONDRAZAKA, âgé de 21 ans et actuellement étudiant en 2ème année à l'Institut Supérieur Polytéchnique de Madagascar (ISPM). En tant que jeune développeur Full-Stack basé à Antananarivo, je suis passionné par la création de solutions innovantes. À la recherche constante de nouveaux défis, j'apprécie l'apprentissage des dernières technologies. Fort d'une expérience dans le développement d'applications web, je vous invite à me contacter au 0342991503 ou par e-mail à mrnrakotondrazaka@gmail.com pour toute discussion ou demande professionnelle.",
   liste: [
     {
       title: "Nom",
