@@ -1,15 +1,11 @@
 <div class="relative h-40 w-40">
   <svg class="h-full w-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
     <!-- Background Circle -->
-    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 dark:text-gray-700" stroke-width="2"></circle>
-    <!-- Progress Circle inside a group with rotation -->
-    <g class="origin-center -rotate-90 transform">
-      <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-700 dark:text-blue-600" stroke-width="2" stroke-dasharray="100" [attr.stroke-dashoffset]="-pourcentage+100"></circle>
-    </g>
+    <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-600 dark:text-blue-600" stroke-width="2"></circle>
+
   </svg>
-  <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
-      <img class='w-12' [src]="image" [alt]="pourcentage"/>
-      <p class="text-center text-base text-gray-800 dark:text-gray-400 absolute bottom-0 start-1/2 transform translate-y-full -translate-x-1/2">{{pourcentage}}%</p>
+  <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2" >
+      <img class='w-14' [ngClass]="isDark ? 'dark:invert' : ''" [src]="image" [alt]="name"/>
   </div>
   <p class="flex-none text-xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 capitalize text-center">{{name}}</p>
 </div>
